@@ -25,7 +25,7 @@ Version of WordPress tested: 4.2
     - [Link 1](https://core.trac.wordpress.org/changeset/33549)
   - [x] References:
     - [Link 1](https://blog.sucuri.net/2015/08/persistent-xss-vulnerability-in-wordpress-explained.html)
-1. Authenticated Cross-Site Scripting (XSS)
+2. Authenticated Cross-Site Scripting (XSS)
   - [x] Summary: 
     - Vulnerability types: (XSS)
     - Tested in version: 4.2
@@ -33,8 +33,9 @@ Version of WordPress tested: 4.2
   - [x] GIF Walkthrough: 
     ![alt text](./XSS2.gif)
   - [x] Steps to recreate: 
-    1. Go to any post
-    2. Paste in the following as a comment of the post
+    1. Gain privilege to be able to comment on post
+    2. Go to any post
+    3. Paste in the following as a comment of the post
     ```
     http://www.test.com/wp-admin/customize.php?theme=<svg onload=alert(1)>
     ```
@@ -58,10 +59,6 @@ Version of WordPress tested: 4.2
     ```
   - [x] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/changeset/33359)
-
-## Assets
-
-List any additional assets, such as scripts or files
 
 ## Resources
 
